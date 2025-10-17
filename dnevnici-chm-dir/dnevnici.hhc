@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<OBJECT type="text/site properties">
+	<param name="Window Styles" value="0x800025">
+</OBJECT>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="'&Auml;&iacute;&aring;&acirc;&iacute;&egrave;&ouml;&egrave; &iuml;&icirc; &Ccedil;&Auml;&Auml;&Ntilde;' Help Index">
+		<param name="Local" value="main_index.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Menus">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="&Igrave;&aring;&iacute;&thorn; &quot;&Acirc;&uacute;&acirc;&aring;&aelig;&auml;&agrave;&iacute;&aring;'">
+			<param name="Local" value="menu_int.htm">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="&Auml;&iacute;&aring;&acirc;&iacute;&egrave;&ouml;&egrave; &ccedil;&agrave; &iuml;&icirc;&ecirc;&oacute;&iuml;&ecirc;&egrave;&ograve;&aring;">
+				<param name="Local" value="hid_pokupki.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="&Auml;&iacute;&aring;&acirc;&iacute;&egrave;&ecirc; &ccedil;&agrave; &iuml;&eth;&icirc;&auml;&agrave;&aelig;&aacute;&egrave;&ograve;&aring;">
+				<param name="Local" value="hid_prodagbi.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="&Igrave;&aring;&iacute;&thorn; '&Auml;&egrave;&ntilde;&ecirc;/&auml;&egrave;&ntilde;&ecirc;&aring;&ograve;&egrave;'">
+			<param name="Local" value="menu_disk.htm">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="&Ccedil;&agrave;&iuml;&egrave;&ntilde; &iacute;&agrave; &auml;&iacute;&aring;&acirc;&iacute;&egrave;&ouml;&egrave; &iacute;&agrave; &ocirc;&agrave;&eacute;&euml;">
+				<param name="Local" value="hid_export_file.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="&Igrave;&aring;&iacute;&thorn; '&Ntilde;&iuml;&eth;&agrave;&acirc;&ecirc;&egrave;'">
+			<param name="Local" value="menu_report.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="&Igrave;&aring;&iacute;&thorn; '&Ntilde;&euml;&oacute;&aelig;&aring;&aacute;&iacute;&egrave; &ocirc;&oacute;&iacute;&ecirc;&ouml;&egrave;&egrave;'">
+			<param name="Local" value="menu_tools.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="&Igrave;&aring;&iacute;&thorn; &Iuml;&icirc;&igrave;&icirc;&ugrave;">
+			<param name="Local" value="menu_help.htm"> 
+			</OBJECT> 
+	</UL>
+</UL>
+</BODY></HTML>

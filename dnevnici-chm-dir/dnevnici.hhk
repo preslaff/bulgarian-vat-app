@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="&iuml;&icirc;&ecirc;&oacute;&iuml;&ecirc;&egrave;">
+		<param name="Name" value="Дневници за покупките">
+		<param name="Local" value="hid_pokupki.htm"> 
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="&iuml;&eth;&icirc;&auml;&agrave;&aelig;&aacute;&egrave;">
+		<param name="Name" value="Дневници за продажбите">
+		<param name="Local" value="hid_prodagbi.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="&ecirc;&icirc;&iacute;&ograve;&eth;&agrave;&atilde;&aring;&iacute;&ograve;&egrave;">
+		<param name="Name" value="Контрагенти">
+		<param name="Local" value="hid_dialog_kontrag.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="&Auml;&aring;&ecirc;&euml;&agrave;&eth;&agrave;&ouml;&egrave;&yuml; &Ccedil;&Auml;&Auml;&Ntilde;">
+		<param name="Name" value="Раздел А">
+		<param name="Local" value="hid_dialog_deklara.htm">
+		<param name="URL" value="hid_dialog_deklarb.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VIES">
+		<param name="Name" value="VIES-декларация">
+		<param name="Local" value="hid_dialog_vies.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="&ccedil;&agrave;&iuml;&egrave;&ntilde; &iacute;&agrave; &ocirc;&agrave;&eacute;&euml;">
+		<param name="Name" value="Запис на дневници на файл">
+		<param name="Local" value="hid_export_file.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="&Iuml;&eth;&aring;&igrave;&agrave;&otilde;&acirc;&agrave;&iacute;&aring; &iacute;&agrave; &iuml;&aring;&eth;&egrave;&icirc;&auml;">
+		<param name="Name" value="(Премахване на период)">
+		<param name="Local" value="hid_delete_period.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="&auml;&oacute;&aacute;&euml;&egrave;&eth;&agrave;&iacute;&egrave;">
+		<param name="Name" value="(Изтриване на дублирани документи)">
+		<param name="Local" value="hid_delete_dubl.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="&iuml;&eth;&icirc;&acirc;&aring;&eth;&ecirc;&agrave;">
+		<param name="Name" value="Проверка на дневници от файл">
+		<param name="Local" value="hid_chek_files.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="&icirc;&aacute;&aring;&auml;&egrave;&iacute;&aring;&iacute;&egrave;&aring; &iacute;&agrave; &auml;&iacute;&aring;&acirc;&iacute;&egrave;&ouml;&egrave;">
+		<param name="Name" value="Проверка на дневници от файл">
+		<param name="Local" value="hid_chek_files.htm">
+		</OBJECT>
+</UL>
+</BODY></HTML>

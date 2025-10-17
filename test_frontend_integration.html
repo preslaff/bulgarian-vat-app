@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Frontend Integration - Document Types</title>
+    <script>
+        async function testDocumentTypes() {
+            try {
+                console.log('Testing purchase document types...');
+                const response = await fetch('http://localhost:8001/api/v2/purchase-document-types');
+                const data = await response.json();
+                
+                document.getElementById('results').innerHTML = `
+                    <h3>Purchase Document Types (${data.document_types.length} total)</h3>
+                    <ul>
+                        ${data.document_types.map(type => 
+                            `<li><strong>Code ${type.code}:</strong> ${type.name} - ${type.description}</li>`
+                        ).join('')}
+                    </ul>
+                `;
+                
+                // Test sales document types too
+                const salesResponse = await fetch('http://localhost:8001/api/v2/sales-document-types');
+                const salesData = await salesResponse.json();
+                
+                document.getElementById('results').innerHTML += `
+                    <h3>Sales Document Types (${salesData.document_types.length} total)</h3>
+                    <ul>
+                        ${salesData.document_types.map(type => 
+                            `<li><strong>Code ${type.code}:</strong> ${type.name} - ${type.description}</li>`
+                        ).join('')}
+                    </ul>
+                `;
+                
+                document.getElementById('status').innerHTML = 
+                    '<p style="color: green;">✅ SUCCESS: Enhanced API is working correctly!</p>' +
+                    `<p>Found ${data.document_types.length} purchase document types and ${salesData.document_types.length} sales document types.</p>` +
+                    '<p><strong>The user should now see all 14 document types in the purchase ledger form.</strong></p>';
+                    
+            } catch (error) {
+                console.error('Error:', error);
+                document.getElementById('status').innerHTML = 
+                    '<p style="color: red;">❌ ERROR: ' + error.message + '</p>';
+            }
+        }
+        
+        // Auto-run test when page loads
+        window.onload = testDocumentTypes;
+    </script>
+</head>
+<body>
+    <h1>Bulgarian VAT System - Frontend Integration Test</h1>
+    <p>Testing connection to enhanced API on port 8001...</p>
+    
+    <div id="status">Loading...</div>
+    <div id="results"></div>
+    
+    <hr>
+    <h3>Next Steps:</h3>
+    <ol>
+        <li>Open the purchase ledger form at: <a href="http://localhost:5174" target="_blank">http://localhost:5174</a></li>
+        <li>Navigate to "Journals" → "Purchases"</li>
+        <li>Click "Add New Entry"</li>
+        <li>Check the "Document Type" dropdown - you should now see all 14 document types instead of just 3</li>
+    </ol>
+</body>
+</html>

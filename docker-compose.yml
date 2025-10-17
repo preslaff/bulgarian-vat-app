@@ -1,0 +1,66 @@
+services:
+  # PostgreSQL Database
+  postgres:
+    image: postgres:15-alpine
+    container_name: vat_postgres
+    environment:
+      POSTGRES_DB: vat_reports_db
+      POSTGRES_USER: vat_reports_user
+      POSTGRES_PASSWORD: '78preslaffPa55^!'
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - vat_network
+    restart: unless-stopped
+
+  # FastAPI Backend
+  backend:
+    build: ./backend
+    container_name: vat_backend
+    environment:
+      DATABASE_URL: postgresql+asyncpg://vat_reports_user:78preslaffPa55^!@postgres:5432/vat_reports_db
+      PYTHONPATH: /app
+    ports:
+      - "8000:8000"
+    depends_on:
+      - postgres
+    volumes:
+      - ./backend:/app
+    networks:
+      - vat_network
+    restart: unless-stopped
+    command: uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+
+  # Svelte Frontend
+  frontend:
+    build: ./frontend
+    container_name: vat_frontend
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    networks:
+      - vat_network
+    restart: unless-stopped
+    command: npm run dev -- --host 0.0.0.0
+
+  # Redis for caching (optional)
+  redis:
+    image: redis:7-alpine
+    container_name: vat_redis
+    ports:
+      - "6379:6379"
+    networks:
+      - vat_network
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+
+networks:
+  vat_network:
+    driver: bridge
